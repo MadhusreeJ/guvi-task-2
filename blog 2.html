@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Document VS Window Objects</title>
+    </head>
+    <body>
+        <h1>Document VS Window Objects</h1>
+        The window is a global object holding variables, functions, history and location. The document comes 
+        under the window and is considered the property of the window. The Document and Window objects are 
+        fundamental parts of the web browsing environment in JavaScript, 
+        but they serve different purposes and contexts:
+
+        <h3>Document Object:</h3>
+             The document object represents the HTML document that is currently loaded in the browser window 
+           or frame. It provides access to the content and structure of the web page, allowing JavaScript to
+            manipulate and interact with the elements on the page.
+            <h4>Key properties and methods of the document object include:</h4>
+             - "document.getElementById(id)": Returns the element with the specified ID.
+             - "document.getElementsByTagName(name)": Returns a collection of elements with the specified
+              tag name.
+             - "document.createElement(tagName)": Creates a new element node.
+             - "document.body": Returns the `<body>` element of the document.
+             - "document.title": Returns the title of the document.
+           - Essentially, the document object is a representation of the entire HTML structure of the current
+            web page, providing methods to interact with its elements and content.
+        
+        <h3>Object:</h3> 
+             The window object represents the browser window that contains the DOM document. It serves as the
+            global object for JavaScript in the browser environment, and it can be used to control the browser
+             itself rather than just the web page content.
+           <h4>Key properties and methods of the window object include:</h4>
+             - "window.alert(message)": Displays an alert dialog with the specified message.
+             - "window.innerWidth" and "window.innerHeight": Returns the interior width and height of the 
+             browser window.
+             - "window.location": Provides information about the current URL and can be used to navigate to a 
+             new page.
+             - "window.localStorage" and "window.sessionStorage": Provide storage mechanisms for storing 
+             key-value pairs locally.
+           - The "window" object encapsulates not only the current browsing context but also methods and 
+           properties for controlling the browser itself, managing navigation, handling dialogs, and managing
+            browser history.
+        
+        <h3>Key Differences:</h3>
+        <h5>Scope and Context:</h5> The document object deals specifically with the structure and content of the
+         HTML document loaded in the browser window. It represents the DOM hierarchy of elements.
+        <h5>Global Context:</h5> The window object is the global object in the browser environment, encompassing
+         the entire browser window and providing access to methods and properties that control the browser 
+         itself, as well as the environment in which the document is displayed.
+        <h5>Hierarchy:</h5> The document object is a part of the window object. It can be accessed via 
+        "window.document" or simply "document".
+        
+        In summary, while the document object represents the HTML structure and content of the current web
+         page, allowing interaction with its elements, the window object serves as the global environment in
+          which the document resides, providing control over the browser window and its behavior.
+    </body>
+</html>
